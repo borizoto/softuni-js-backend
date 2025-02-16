@@ -1,0 +1,30 @@
+{{setTitle 'TechStore | Home'}}
+
+<section class="hero">
+    <div class="container">
+        <h2>Your One-Stop Shop for Laptops and Computers</h2>
+        <p>Find the best deals on the latest laptops, desktops, and accessories.</p>
+        <a href="/devices" class="btn">Shop Now</a>
+    </div>
+</section>
+
+<section class="products">
+    <div class="container">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+
+            {{#each devices}}
+            <div class="product-item">
+                <img src="{{this.image}}">
+                <h3>{{this.brand}} {{this.model}}</h3>
+                <p>${{this.price}}</p>
+                <a href="/devices/{{this._id}}/details" class="btn">View Details</a>
+            </div>
+            {{else}}
+            <p class="no-post">There haven't been any devices posted yet.</p>
+            {{/each}}
+        </div>
+    </div>
+
+
+</section>

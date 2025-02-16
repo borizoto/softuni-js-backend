@@ -1,0 +1,65 @@
+.create-hero {
+    padding: 50px 0;
+    text-align: center;
+    color: #fff;
+    margin-top: 80px;
+}
+
+.create-hero h2 {
+    margin: 0 0 10px;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ff9900;
+}
+
+.create-hero p {
+    margin: 0 0 20px;
+    font-size: 1.2rem;
+    color: #0073e6;
+    font-weight: bold;
+}
+
+.create-form .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.create-form .form-group {
+    margin-bottom: 15px;
+}
+
+.create-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.create-form input[type="text"],
+.create-form input[type="file"] {
+    width: 96%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.create-form .btn {
+    width: 100%;
+    padding: 15px;
+    background: #0073e6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.create-form .btn:hover {
+    background: #005bb5;
+    transform: translateY(-5px);
+}

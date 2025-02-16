@@ -1,0 +1,31 @@
+{{setTitle 'TechStore | Catalog'}}
+
+<section class="catalog-hero">
+    <div class="container">
+        <h2>Product Catalog</h2>
+        <p>Explore our extensive range of laptops, desktops, and accessories.</p>
+    </div>
+</section>
+
+<section class="catalog">
+    <div class="container">
+        <div class="product-grid">
+
+            {{#each devices}}
+            <div class="product-item">
+                <img src="{{this.image}}">
+                <h3>{{this.brand}} {{this.model}}</h3>
+                <h2>${{this.price}}</h2>
+                <p>CPU: {{this.cpu}}</p>
+                <p>GPU: {{this.gpu}}</p>
+                <p>Screen: {{this.screenSize}}</p>
+                <a href="/devices/{{this._id}}/details" class="btn">View Details</a>
+            </div>
+            {{else}}
+            <!-- Repeat product-item divs for more products -->
+            <p class="no-post">There haven't been any devices posted yet.</p>
+            {{/each}}
+
+        </div>
+    </div>
+</section>

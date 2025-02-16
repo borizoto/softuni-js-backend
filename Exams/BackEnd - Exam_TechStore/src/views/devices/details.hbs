@@ -1,0 +1,44 @@
+{{setTitle 'TechStore | Details'}}
+
+<section class="details-hero">
+    <div class="container">
+        <h2>Laptop Details</h2>
+    </div>
+</section>
+
+<section class="details-content">
+    <div class="container">
+        <div class="product-details">
+            <div class="product-image">
+                <img src="{{device.image}}" alt="Laptop">
+            </div>
+            <div class="product-info">
+                <h3>Brand: {{device.brand}}</h3>
+                <p><strong>Model:</strong> {{device.model}}</p>
+                <p><strong>Hard Disk:</strong> {{device.hardDisk}}</p>
+                <p><strong>Screen Size:</strong> {{device.screenSize}}</p>
+                <p><strong>RAM:</strong> {{device.ram}}</p>
+                <p><strong>Operating System:</strong> {{device.operatingSystem}}</p>
+                <p><strong>CPU:</strong> {{device.cpu}}</p>
+                <p><strong>GPU:</strong> {{device.gpu}}</p>
+                <p><strong>Price:</strong> ${{device.price}}</p>
+                <p><strong>Color:</strong> {{device.color}}</p>
+                <p><strong>Weight:</strong> {{device.weight}}</p>
+            </div>
+        </div>
+        {{#if user}}
+        <div class="product-actions">
+            {{#if isOwner}}
+            <button class="btn edit"><a href="/devices/{{device._id}}/edit">Edit</a></button>
+            <button class="btn delete"><a href="/devices/{{device._id}}/delete">Delete</a></button>
+            {{else}}
+            {{#if isPreferred}}
+            <p class="prefer-message">You've already preferred this device</p>
+            {{else}}
+            <button class="btn prefer"><a href="/devices/{{device._id}}/prefer">Prefer</a></button>
+            {{/if}}
+            {{/if}}
+        </div>
+        {{/if}}
+    </div>
+</section>
