@@ -1,0 +1,138 @@
+main {
+    padding-top: 30px;
+}
+
+.catalog #title {
+    text-align: center;
+    font-size: 50px;
+    color: black;
+}
+
+.catalog h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.catalog #title {
+    font-size: 88px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-shadow: 5px 5px black;
+}
+
+.item-list {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.20),
+        0 2px 10px 0 rgba(0, 0, 0, 0.20);
+    background-color: rgba(0, 0, 0, 0.718);
+    width: auto;
+    height: 380px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow-y: scroll;
+}
+
+.item-list::-webkit-scrollbar {
+    width: 20px;
+}
+
+.item-list::-webkit-scrollbar-track {
+    border-radius: 100px;
+}
+
+.item-list::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(180deg, #D0368A 0%, #708AD4 99%);
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+    border-radius: 100px;
+}
+
+.catalog .event {
+    display: inline-block;
+    width: 480px;
+    height: 200px;
+    margin-top: 80px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border: 2px solid black;
+    background-color: white;
+}
+
+.catalog .img img {
+    float: left;
+    border: 2px solid black;
+    width: 140px;
+    height: 120px;
+    margin: 20px;
+}
+
+.catalog .event-info {
+    margin-bottom: 30px;
+}
+
+.catalog .event-info h1 {
+    font-size: 24px;
+    margin-top: 15px;
+    color: black;
+}
+
+.catalog .event-info p {
+    color: black;
+    margin-top: 10px;
+}
+
+.catalog .event-info span {
+    color: black;
+    font-weight: bolder;
+}
+
+.catalog .event .btn-details {
+    border: 5em;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    -webkit-transform: translate(0);
+    transform: translate(0);
+    background-color: black;
+    padding: 0.7em 2em;
+    border-radius: 65px;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
+    -webkit-transition: box-shadow 0.25s;
+    transition: box-shadow 0.25s;
+    color: white;
+    width: 100px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.catalog .event .btn-details:hover {
+    box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
+}
+
+
+.no-event {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.20),
+        0 2px 10px 0 rgba(0, 0, 0, 0.20);
+    background-color: black;
+    width: auto;
+    height: 100px;
+    margin-top: 150px;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: white;
+}
+
+.no-event p {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
+}

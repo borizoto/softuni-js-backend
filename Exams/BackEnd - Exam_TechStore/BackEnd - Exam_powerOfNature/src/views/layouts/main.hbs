@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=disaster-width, initial-scale=1.0">
+    <title>{{#if pageTitle}}{{pageTitle}}{{else}}Home Page{{/if}}</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/disasters/search">Search</a></li>
+                <li><a href="/disasters">Power of Nature</a></li> 
+                {{#if user}}
+                <li><a href="/disasters/create">Create Event</a></li>
+                <li><a href="/auth/logout">Logout</a></li>
+                {{else}}
+                <li><a href="/auth/login">Login</a></li>
+                <li><a href="/auth/register">Register</a></li>
+                {{/if}}
+            </ul>
+        </nav>
+    </header>
+
+    <!-- In case of error, you should display div with class "errorContainer" -->
+    <!-- You can choose to display the first error or all of them (error message/s in your opinion) -->
+    {{#if error}}
+    <div>
+        <div class="errorContainer">
+            <p>{{error}}</p>
+        </div>
+    </div>
+    {{/if}}
+
+    <main>
+        {{{body}}}
+    </main>
+
+    <footer>
+        <p>&copy JS Back-End 2025</p>
+    </footer>
+
+</body>
+
+</html>
