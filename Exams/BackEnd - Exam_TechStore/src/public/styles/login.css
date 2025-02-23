@@ -1,0 +1,77 @@
+.login-hero {
+    padding: 50px 0;
+    text-align: center;
+    color: #fff;
+    margin-top: 80px;
+}
+
+.login-hero h2 {
+    margin: 0 0 10px;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ff9900;
+}
+
+.login-hero p {
+    margin: 0 0 20px;
+    font-size: 1.2rem;
+    color:#0073e6;
+    font-weight: bold;
+}
+
+.login-form .container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.login-form .form-group {
+    margin-bottom: 15px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-form input {
+    width: 96%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-form .btn {
+    width: 100%;
+    padding: 10px;
+    background: #0073e6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.login-form .btn:hover {
+    background: #005bb5;
+    transform: translateY(-5px);
+}
+
+.login-form p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-form p a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.login-form p a:hover {
+    text-decoration: underline;
+}

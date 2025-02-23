@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{#if pageTitle}}{{pageTitle}}{{else}}TechStore - Laptops and Computers{{/if}}</title>
+    {{!-- <title>TechStore{{#if pageTitle}} | {{pageTitle}}{{else}}Laptops and Computers{{/if}}</title> --}}
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>TechStore</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/devices">Catalog</a></li>
+                    <li><a href="/about">About</a></li>
+                    {{#if user}}
+                    <li><a href="/profile">Profile</a></li>
+                    <li><a href="/devices/create">Create Offer</a></li>
+                    <li><a href="/auth/logout">Logout</a></li>
+                    {{else}}
+                    <li><a href="/auth/login">Login</a></li>
+                    <li><a href="/auth/register">Register</a></li>
+                    {{/if}}
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- In case of error, you should display div with class "errorContainer" -->
+    <!-- You can choose to display the first error or all of them (error message/s in your opinion) -->
+
+    {{#if error}}
+    <div>
+        <div class="errorContainer">
+            <p>{{error}}</p>
+        </div>
+    </div>
+    {{/if}}
+
+    {{{body}}}
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 TechStore. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

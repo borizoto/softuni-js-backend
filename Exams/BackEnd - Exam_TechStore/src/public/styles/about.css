@@ -1,0 +1,55 @@
+.about-hero {
+  background: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAzL3Jhd3BpeGVsX29mZmljZV81M19hX21pbmltYWxfYW5kX2xlc3NfZGV0YWlsX2lsbHVzdHJhdGlvbl9vZl9jb19kM2Q3N2VhNS02YjQyLTQ3MTEtYmNkYy04NmY0NGNlNWZiNzMuanBn.jpg")
+    no-repeat center center/cover;
+  padding: 280px 0 180px;
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.about-hero h2 {
+  margin: 0 0 10px;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.about-hero p {
+  margin: 0 0 20px;
+  font-size: 1.2rem;
+}
+
+.about-content {
+  padding: 2rem 0;
+  background-color: #fff;
+}
+
+.about-content .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-content h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.about-content ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.about-content ul li {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.8;
+}
